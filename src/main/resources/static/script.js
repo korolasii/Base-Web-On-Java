@@ -4,16 +4,9 @@ selectPremium = document.getElementById('selectPremium'),
 freePlan = document.getElementsByClassName('freePlan'),
 standartPlan = document.getElementsByClassName('standartPlan'),
 premiumPlan = document.getElementsByClassName('premiumPlan'),
-signInPopup = document.getElementById('conteinerFormSignIn'),
 signUpPopup = document.getElementById('conteinerFormSignUp'),
 close = document.getElementById('close'),
 closeUp = document.getElementById('closeUp'),
-sendSignIn = document.getElementById('btnSendSignIn'),
-sendSignUp = document.getElementById('btnSendSignUp'),
-signIn = document.getElementById('signIn'),
-signUp = document.getElementById('signUp'),
-signIn2 = document.getElementById('signIn2'),
-signUp2 = document.getElementById('signUp2'),
 getStart = document.getElementById('getStartetd'),
 sub = document.getElementById('sub'),
 thankForm = document.getElementById('thankForm'),
@@ -57,6 +50,7 @@ menu = document.getElementById('menu'),
 imgMenu = document.getElementById('imgMenu'),
 closeMenu = document.getElementById('closeMenu'),
 gridDiv = document.querySelector('#grid'),
+signUpButton = document.getElementById('signUpButton'),
 input = document.getElementById('plac');
 
 slide1.classList.add("activeTouch")
@@ -64,14 +58,7 @@ slide1.classList.add("activeTouch")
 selectFree.addEventListener('click', plan)
 selectStandart.addEventListener('click', plan)
 selectPremium.addEventListener('click', plan)
-signIn.addEventListener('click', signInForm)
-signIn2.addEventListener('click', signInForm)
-close.addEventListener('click', closeSignIn)
-sendSignIn.addEventListener('click', sendSignInForm)
-signUp.addEventListener('click', signUpForm)
-signUp2.addEventListener('click', signUpForm)
-closeUp.addEventListener('click', closeSignUp)
-sendSignUp.addEventListener('click', sendSignUpForm)
+
 getStart.addEventListener('click', tahnkForm)
 sub.addEventListener('click', tahnkForm)
 closeThank.addEventListener('click', CloseThank)
@@ -254,30 +241,6 @@ function checkActiveSlide(name){
         clearTouch()
         slide4.classList.add("activeTouch")
     }
-}
-
-function signInForm(){
-    signInPopup.style.display = 'flex'
-}
-
-function closeSignIn(){
-    signInPopup.style.display = 'none'
-}
-
-function sendSignInForm(){
-    signInPopup.style.display = 'none'
-}
-
-function signUpForm(){
-    signUpPopup.style.display = 'flex'
-}
-
-function closeSignUp(){
-    signUpPopup.style.display = 'none'
-}
-
-function sendSignUpForm(){
-    signUpPopup.style.display = 'none'
 }
 
 function tahnkForm(){

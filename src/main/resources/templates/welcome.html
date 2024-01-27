@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/scss/style.css" th:href="@{scss/style.css}">
+    <link rel="stylesheet" href="/scss/style.css" th:href="@{/scss/style.css}">
 </head>
 <body>
     <div class="page">
@@ -52,16 +52,7 @@
                     </div>
                 </div>
                 <div class="sign">
-                    <a href="signIn" style="text-decoration: none;">
-                        <div class="signIn" id="signIn" style="color:black;">
-                            Sign In
-                        </div>
-                    </a>
-                    <a href="/registerPage" style="text-decoration: none;">
-                        <div class="signUp" id="signUp">
-                            Sign Up
-                        </div>
-                    </a>
+                    <h2>Welcome, <span th:text="${username}"></span>!</h2>
                 </div>
             </div>
         </div>
@@ -170,7 +161,7 @@
                         <h3>
                             50+
                         </h3>
-                    </div>                        
+                    </div>
                     <div class="aboutText">
                         Servers
                     </div>
@@ -197,63 +188,63 @@
                 <div class="textPlan">
                     <h2>Choose Your Plan</h2>
                     <p>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
-                <div class="planDivImg">
-                    <div class="freePlan">
-                        <img src="/picture/planFree.png" th:src="@{/picture/planFree.png}">
-                        <h3>Free Plan</h3>
-                        <ul class="free">
-                            <li>Unlimited Bandwitch</li>
-                            <li>Encrypted Connection</li>
-                            <li>No Traffic Logs</li>
-                            <li>Works on All Devices</li>
-                        </ul>
-                        <h2>Free</h2>
-                        <button id="selectFree">Select</button>
-                    </div>
-                    <div class="standartPlan">
-                        <img src="/picture/planStandard.png" th:src="@{/picture/planStandard.png}">
-                        <h3>Standard Plan</h3>
-                        <ul class="standart">
-                            <li>Unlimited Bandwitch</li>
-                            <li>Encrypted Connection</li>
-                            <li>Yes Traffic Logs</li>
-                            <li>Works on All Devices</li>
-                            <li>Connect Anyware</li>
-                        </ul>
-                        <h2>$9 / mo</h2>
-                        <button id="selectStandart">Select</button>
-                    </div>
-                    <div class="premiumPlan">
-                        <img src="/picture/planPremium.png" th:src="@{/picture/planPremium.png}">
-                        <h3>Premium Plan</h3>
-                        <ul class="premium">
-                            <li>Unlimited Bandwitch</li>
-                            <li>Encrypted Connection</li>
-                            <li>Yes Traffic Logs</li>
-                            <li>Works on All Devices</li>
-                            <li>Connect Anyware</li>
-                            <li>Get New Features</li>
-                        </ul>
-                        <h2>$12 / mo</h2>
-                        <button id="selectPremium">Select</button>
+                    <div class="planDivImg">
+                        <div class="freePlan">
+                            <img src="/picture/planFree.png" th:src="@{/picture/planFree.png}">
+                            <h3>Free Plan</h3>
+                            <ul class="free">
+                                <li>Unlimited Bandwitch</li>
+                                <li>Encrypted Connection</li>
+                                <li>No Traffic Logs</li>
+                                <li>Works on All Devices</li>
+                            </ul>
+                            <h2>Free</h2>
+                            <button id="selectFree">Select</button>
+                        </div>
+                        <div class="standartPlan">
+                            <img src="/picture/planStandard.png" th:src="@{/picture/planStandard.png}">
+                            <h3>Standard Plan</h3>
+                            <ul class="standart">
+                                <li>Unlimited Bandwitch</li>
+                                <li>Encrypted Connection</li>
+                                <li>Yes Traffic Logs</li>
+                                <li>Works on All Devices</li>
+                                <li>Connect Anyware</li>
+                            </ul>
+                            <h2>$9 / mo</h2>
+                            <button id="selectStandart">Select</button>
+                        </div>
+                        <div class="premiumPlan">
+                            <img src="/picture/planPremium.png" th:src="@{/picture/planPremium.png}">
+                            <h3>Premium Plan</h3>
+                            <ul class="premium">
+                                <li>Unlimited Bandwitch</li>
+                                <li>Encrypted Connection</li>
+                                <li>Yes Traffic Logs</li>
+                                <li>Works on All Devices</li>
+                                <li>Connect Anyware</li>
+                                <li>Get New Features</li>
+                            </ul>
+                            <h2>$12 / mo</h2>
+                            <button id="selectPremium">Select</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="mapConteiner">
-                <div class="textMap">
-                    <h2>Huge Global Network of Fast VPN</h2>
-                    <p>See LaslesVPN everywhere to make it easier for you when you move locations.</p>
-                </div>
-                <div class="pictureMap" id="grid">
-                    <img src="/picture/map.png" th:src="@{/picture/map.png}">
-                </div>
-                <div class="inp">
-                    <div class="input" id="plac">
+                <div class="mapConteiner">
+                    <div class="textMap">
+                        <h2>Huge Global Network of Fast VPN</h2>
+                        <p>See LaslesVPN everywhere to make it easier for you when you move locations.</p>
+                    </div>
+                    <div class="pictureMap" id="grid">
+                        <img src="/picture/map.png" th:src="@{/picture/map.png}">
+                    </div>
+                    <div class="inp">
+                        <div class="input" id="plac">
 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
         <div class="conteiner shop">
             <div>
@@ -395,7 +386,7 @@
             <div class="mesager">
                 <div class="logo">
                     <img src="/picture/Logo.png" th:src="@{/picture/Logo.png}">
-                    <h3>LaslesVPN</h3> 
+                    <h3>LaslesVPN</h3>
                 </div>
                 <div class="textMes">
                     <p>
@@ -452,6 +443,27 @@
                 </div>
             </div>
         </div>
+        <div class="conteinerForm" id="conteinerFormSignIn">
+            <div class="contentFormSignIn">
+                <span class="close" id="close">&times;</span>
+                <form>
+                    <div>
+                        <label for="">
+                            Username or email address
+                        </label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">
+                            Password
+                        </label>
+                        <input type="password">
+                    </div>
+                </form>
+                <button id="btnSendSignIn">Send</button>
+            </div>
+        </div>
+
         <div class="conteinerThank"  id="thankForm">
             <div>
                 <span class="close" id="closeThank">&times;</span>

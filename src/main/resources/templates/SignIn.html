@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleReg.css" th:href="@{styleReg.css}">
+</head>
+<body>
+<div class="conteinerForm" id="conteinerFormSignIn">
+        <div class="contentFormSignIn">
+            <form method="post">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button type="button" onclick="signIn()">Sign In</button>
+            </form>
+        </div>
+    <script src="scriptReg.js" th:src="@{scriptSignIn.js}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</div>
+</body>
+</html>
